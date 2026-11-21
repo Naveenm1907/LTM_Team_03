@@ -1,11 +1,8 @@
 package com.edutech.progressive.service;
-
-
 import java.sql.SQLException;
 import java.util.List;
-
 import com.edutech.progressive.entity.Customers;
-
+import com.edutech.progressive.service.impl.CustomerServiceImpl;
 public interface CustomerService {
     List<Customers> getAllCustomers() throws SQLException;
     int addCustomer(Customers customers) throws SQLException;
@@ -18,5 +15,6 @@ public interface CustomerService {
     default Customers getCustomerById(int customerId) throws SQLException {
         return null;
     }
+
 
 }
