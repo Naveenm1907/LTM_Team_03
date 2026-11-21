@@ -19,7 +19,7 @@ public class AccountServiceImpl  {
         return null;
     }
     public Accounts getAccountId(int accountId){
-        return null;it
+        return null;
     }
     public void updateAccount(Accounts accounts){
 
