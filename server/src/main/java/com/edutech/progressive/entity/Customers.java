@@ -1,5 +1,5 @@
 package com.edutech.progressive.entity;
-public class Customers {
+public class Customers implements  Comparable<Customers>{
     int customerId;
     String name;
     String email;
@@ -14,6 +14,10 @@ public class Customers {
         this.username=username;
         this.password=password;
         // this.role=role;
+    }
+    @Override 
+    public int compareTo(Customers otherCustomers){
+        return this.getName().compareTo(otherCustomers.getName());
     }
     public int getCustomerId(){
         return customerId;
